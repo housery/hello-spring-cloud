@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: hello-spring-cloud-config
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/housery/spring-cloud-config
+          search-paths: repertory
+          username: housery
+          password: yangxiaohu2.00
+  zipkin:
+    base-url: http://localhost:9411
+
+# 端口不能改，默认为8888，若要修改在bootstrap中改端口号
+server:
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
