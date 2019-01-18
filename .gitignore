@@ -1,0 +1,10 @@
+# Log file
+*.log
+
+# Editor directories and files
+.idea
+*.iws
+*.iml
+*.ipr
+
+*/target
